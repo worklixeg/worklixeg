@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://worklixeg.com/sitemap.xml
+Sitemap: https://worklixeg.github.io/worklixeg/sitemap.xml
