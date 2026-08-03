@@ -80,6 +80,27 @@
   });
 })();
 
+// contact form -> builds a real WhatsApp message from the entered fields
+(function(){
+  const btn = document.getElementById('contact-submit-btn');
+  if(!btn) return;
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    const name = (document.getElementById('contact-name')||{}).value || '';
+    const phone = (document.getElementById('contact-phone')||{}).value || '';
+    const message = (document.getElementById('contact-message')||{}).value || '';
+    if(!name.trim() && !message.trim()){
+      alert('من فضلك اكتب اسمك أو رسالتك الأول.');
+      return;
+    }
+    let text = 'مرحبًا، أنا ' + (name.trim() || 'عميل جديد') + '.';
+    if(phone.trim()) text += ' رقم التواصل: ' + phone.trim() + '.';
+    if(message.trim()) text += ' الرسالة: ' + message.trim();
+    const url = 'https://wa.me/201126104846?text=' + encodeURIComponent(text);
+    window.open(url, '_blank');
+  });
+})();
+
 // reviews carousel
 (function(){
   const reviewText = document.getElementById('review-text');

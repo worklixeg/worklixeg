@@ -30,7 +30,7 @@
 <meta name="twitter:image" content="https://worklixeg.github.io/worklixeg/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/tailwind.css">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"ProfessionalService","name":"WORKLIXEG","description":"منصة خدمات مهنية لكتابة السيرة الذاتية المتوافقة مع ATS وتحسين LinkedIn وتصميم بورتفوليو لمصر ودول الخليج.","areaServed":["EG","SA","AE","QA","KW","BH","OM"],"telephone":"+201126104846","url":"https://worklixeg.github.io/worklixeg"}]</script>
 </head>
@@ -93,11 +93,12 @@
   </div>
   <div class="bg-white rounded-3xl p-8 border border-gray-100">
     <h2 class="font-bold text-lg mb-4">نموذج تواصل سريع</h2>
-    <form class="space-y-4">
-      <input type="text" placeholder="الاسم" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm" />
-      <input type="text" placeholder="رقم الموبايل" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm font-latin" dir="ltr" />
-      <textarea placeholder="رسالتك" rows="4" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm"></textarea>
-      <a href="https://wa.me/201126104846?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D9%86%D8%A7%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D9%86%20WORKLIXEG." class="block text-center bg-navy text-white font-bold px-7 py-3 rounded-2xl hover:brightness-110 transition">إرسال عبر واتساب</a>
+    <p class="text-gray-400 text-xs mb-4">هيتم فتح واتساب برسالة جاهزة ببياناتك عند الإرسال.</p>
+    <form class="space-y-4" onsubmit="return false;">
+      <input id="contact-name" type="text" placeholder="الاسم" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm" />
+      <input id="contact-phone" type="text" placeholder="رقم الموبايل" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm font-latin" dir="ltr" />
+      <textarea id="contact-message" placeholder="رسالتك" rows="4" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm"></textarea>
+      <button id="contact-submit-btn" type="button" class="block w-full text-center bg-navy text-white font-bold px-7 py-3 rounded-2xl hover:brightness-110 transition">إرسال عبر واتساب</button>
     </form>
   </div>
 </section>

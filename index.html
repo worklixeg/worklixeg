@@ -30,7 +30,7 @@
 <meta name="twitter:image" content="https://worklixeg.github.io/worklixeg/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/tailwind.css">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"ProfessionalService","name":"WORKLIXEG","description":"منصة خدمات مهنية لكتابة السيرة الذاتية المتوافقة مع ATS وتحسين LinkedIn وتصميم بورتفوليو لمصر ودول الخليج.","areaServed":["EG","SA","AE","QA","KW","BH","OM"],"telephone":"+201126104846","url":"https://worklixeg.github.io/worklixeg"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"كم مدة تسليم السيرة الذاتية؟","acceptedAnswer":{"@type":"Answer","text":"مدة التسليم القياسية 24 ساعة من استلام بياناتك، مع خيار تسليم عاجل لمن يحتاج وقتًا أقل."}},{"@type":"Question","name":"هل السيرة متوافقة فعلًا مع أنظمة ATS؟","acceptedAnswer":{"@type":"Answer","text":"نعم، نستخدم تنسيقًا مُختبرًا يمر بسلاسة عبر أنظمة الفرز الآلي المستخدمة في أغلب الشركات الكبرى."}},{"@type":"Question","name":"هل يوجد تعديلات بعد التسليم؟","acceptedAnswer":{"@type":"Answer","text":"نعم، جولات تعديل غير محدودة حتى تصل للنسخة اللي تمثلك بشكل كامل."}},{"@type":"Question","name":"هل تقدموا خدمات لسوق الخليج؟","acceptedAnswer":{"@type":"Answer","text":"نعم، لدينا خبرة في صياغة سير ذاتية وخطابات تقديم وتصميم مواقع مخصصة لمتطلبات سوق العمل والأعمال في دول الخليج."}}]}]</script>
 </head>
@@ -96,14 +96,6 @@
           شاهد نماذج الأعمال
         </a>
       </div>
-      <div class="flex items-center gap-6 text-sm text-muted">
-        <div class="flex -space-x-3 space-x-reverse">
-          <div class="w-9 h-9 rounded-full bg-navy-3 border-2 border-navy flex items-center justify-center text-xs font-bold text-white">A</div>
-          <div class="w-9 h-9 rounded-full bg-navy-3 border-2 border-navy flex items-center justify-center text-xs font-bold text-white">H</div>
-          <div class="w-9 h-9 rounded-full bg-navy-3 border-2 border-navy flex items-center justify-center text-xs font-bold text-white">M</div>
-        </div>
-        <span>+5000 عميل واثق بخدماتنا</span>
-      </div>
     </div>
     <div class="relative h-[460px] md:h-[560px] hidden sm:block">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -149,25 +141,6 @@
           <div class="font-bold text-navy">Profile Optimized</div>
         </div>
       </div>
-    </div>
-  </div>
-</section><section class="bg-white border-b border-gray-100">
-  <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-    <div>
-      <div class="font-latin font-extrabold text-3xl md:text-4xl text-navy counter" data-target="5000">0</div>
-      <div class="text-sm text-gray-500 mt-1">مشروع منجز</div>
-    </div>
-    <div>
-      <div class="font-latin font-extrabold text-3xl md:text-4xl text-navy"><span class="counter" data-target="98">0</span>%</div>
-      <div class="text-sm text-gray-500 mt-1">رضا العملاء</div>
-    </div>
-    <div>
-      <div class="font-latin font-extrabold text-3xl md:text-4xl text-navy"><span class="counter" data-target="24">0</span>س</div>
-      <div class="text-sm text-gray-500 mt-1">متوسط وقت التسليم</div>
-    </div>
-    <div>
-      <div class="font-latin font-extrabold text-3xl md:text-4xl text-orange">ATS</div>
-      <div class="text-sm text-gray-500 mt-1">تنسيق معتمد ومُختبر</div>
     </div>
   </div>
 </section><section class="max-w-7xl mx-auto px-5 md:px-8 py-24">
@@ -401,49 +374,28 @@
 </section><section id="portfolio" class="max-w-7xl mx-auto px-5 md:px-8 py-24">
   <div class="text-center max-w-2xl mx-auto mb-16">
     <span class="text-orange font-bold text-sm tracking-wide">أعمالنا</span>
-    <h2 class="font-extrabold text-3xl md:text-4xl mt-3">نماذج من مشاريع حقيقية سلمناها</h2>
+    <h2 class="font-extrabold text-3xl md:text-4xl mt-3">أمثلة على أنواع الخدمات اللي بنقدمها</h2>
   </div>
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
     <div class="rounded-3xl bg-navy h-64 p-6 flex flex-col justify-end card-hover">
       <span class="text-white font-bold">CV احترافي</span>
-      <span class="text-muted text-sm">مهندس اتصالات</span>
+      <span class="text-muted text-sm">قطاع الهندسة</span>
     </div>
     <div class="rounded-3xl bg-navy-3 h-64 p-6 flex flex-col justify-end card-hover">
       <span class="text-white font-bold">Portfolio تصميم</span>
-      <span class="text-muted text-sm">مصمم جرافيك</span>
+      <span class="text-muted text-sm">قطاع الجرافيك</span>
     </div>
     <div class="rounded-3xl bg-navy h-64 p-6 flex flex-col justify-end card-hover">
       <span class="text-white font-bold">LinkedIn</span>
-      <span class="text-muted text-sm">مدير مبيعات</span>
+      <span class="text-muted text-sm">قطاع المبيعات</span>
     </div>
     <div class="rounded-3xl bg-navy-3 h-64 p-6 flex flex-col justify-end card-hover">
       <span class="text-white font-bold">موقع ولاندنج بيدج</span>
-      <span class="text-muted text-sm">عيادة أسنان</span>
+      <span class="text-muted text-sm">قطاع طبي</span>
     </div>
   </div>
   <div class="text-center mt-10">
-    <a href="portfolio.html" class="text-orange font-bold">شاهد كل الأعمال ←</a>
-  </div>
-</section><section class="bg-navy py-24 overflow-hidden">
-  <div class="max-w-4xl mx-auto px-5 md:px-8 text-center">
-    <span class="text-orange font-bold text-sm tracking-wide">آراء العملاء</span>
-    <h2 class="font-extrabold text-3xl md:text-4xl text-white mt-3 mb-14">قصص نجاح حقيقية</h2>
-    <div class="relative">
-      <div id="review-slide" class="bg-navy-2 border border-line rounded-3xl p-10">
-        <div class="flex justify-center gap-1 mb-5 text-orange">
-          <span>★★★★★</span>
-        </div>
-        <p id="review-text" class="text-white text-lg leading-relaxed mb-6">"السيرة الذاتية اللي عملولي إياها غيّرت شكل تعاملي مع الشركات، حصلت على 3 مقابلات في أسبوعين."</p>
-        <div id="review-name" class="text-orange font-bold">أحمد س. — مهندس مدني</div>
-      </div>
-      <div class="flex justify-center gap-4 mt-6">
-        <button id="rev-prev" class="w-10 h-10 rounded-full border border-line text-white flex items-center justify-center hover:bg-white/10">‹</button>
-        <button id="rev-next" class="w-10 h-10 rounded-full border border-line text-white flex items-center justify-center hover:bg-white/10">›</button>
-      </div>
-    </div>
-    <div class="mt-10">
-      <a href="reviews.html" class="text-orange font-bold">اقرأ كل التقييمات ←</a>
-    </div>
+    <a href="portfolio.html" class="text-orange font-bold">شاهد كل الأمثلة ←</a>
   </div>
 </section><section id="blog" class="max-w-7xl mx-auto px-5 md:px-8 py-24">
   <div class="text-center max-w-2xl mx-auto mb-16">
